@@ -30,6 +30,10 @@ func main() {
 		})
 	})
 
+	router.GET("/favicon.ico", func(c *gin.Context) {
+		c.File("./static/favicon.ico")
+	})
+
 	router.Run()
 }
 
