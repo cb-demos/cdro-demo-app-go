@@ -38,7 +38,7 @@ func main() {
 }
 
 func getCommitSha() string {
-	content, err := ioutil.ReadFile("version.txt")
+	content, err := ioutil.ReadFile("sha.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
